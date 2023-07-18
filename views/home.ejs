@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="home-container">
+    <form action="/csv-upload" enctype="multipart/form-data" method="POST">
+        <div id="csv-upload">
+            <input type="file" name="file" accept=".csv">
+            <button id="upload-button">Upload</button>
+        </div>
+    </form>
+</div>
+
+<div id="all-files">
+    <% if (csvs.length == 0) { %>
+        <h3 style="text-align: center;">No files to show!</h3>
+    <% } else { %>
+        <table>
+            <caption>Uploaded CSV Files</caption>
+            <thead>
+                <tr>
+                    <th>File Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>View</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for (csv of csvs) { %>
+                    <%- include('_csv') -%>
+                <% } %>
+            </tbody>
+        </table>
+    <% } %>
+</div>

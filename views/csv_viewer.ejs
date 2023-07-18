@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/csv-viewer.css">
+<div id="search-container">
+    <button id="back-button"><a href="/"><i class="fa-solid fa-arrow-left"></i>Back</a></button>
+    <div id="search-bar">
+        <form>
+            <div id="input-bar">
+                <input type="text" id="myInput" placeholder="Search" onkeyup="searchFun()">
+            </div>
+            <button id="search-btn" onclick="searchFun()">
+                <i class="fas fa-search icon" style="color: white;"></i>
+            </button>
+        </form>
+    </div>
+    <div></div>
+</div>
+
+<div id="table-data">
+    <table id="myTable">
+        <caption><%= fileName %></caption>
+        <thead>
+            <tr>
+                <% for (let head of header) { %>
+                    <th><%= head %></th>
+                <% } %>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let result of results) {%>
+                <tr>
+                    <% for (let key of Object.keys(result)) { %>
+                        <td>
+                            <%= result[key] %>
+                        </td>
+                    <% } %>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,87 @@
+#search-container {
+    margin-top: 0.5em;
+    height: 3.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    #back-button {
+        background-color: rgb(184, 182, 182);
+        color: black;
+        height: 2.2rem;
+        width: 7rem;
+        border: none;
+        font-size: 1.5em;
+        a {
+            text-decoration: none;
+            color: black;
+            i {
+                margin-right: 0.5em;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: black;
+            a {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    #search-bar {
+        height: 2.2rem;
+        width: 23rem;
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #input-bar {
+                border: 1px solid black;
+                height: 2.4em;
+                width: 100%;
+                input {
+                    position: relative;
+                    border: none;
+                    outline: none;
+                    top: 0.4em;
+                    left: 0.7em;
+                    height: 2.3em;
+                    width: 96%;
+                    background-color: transparent;
+                }
+            }
+            button {
+                height: 3em;
+                width: 3em;
+                border: none;
+                background-color: #4474c0;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+#table-data {
+    width: 100%;
+    margin-top: 2em;
+    table {
+        width: 100%;
+        padding: 1em 0;
+        caption {
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        th {
+            background-color: #4474c0;
+            color: white;
+            padding: 0.8em 0;
+        }
+        td {
+            text-align: center;
+            padding: 0.8em 0;
+            background-color: rgb(155, 211, 230);
+        }
+    }
+}

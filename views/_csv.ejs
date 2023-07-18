@@ -1,0 +1,7 @@
+<tr>
+    <td><%= csv.fileName %></td>
+    <td><%= csv.createdAt.toLocaleDateString() %></td>
+    <td><%= csv.createdAt.toLocaleTimeString() %></td>
+    <td><a href="/view/<%= csv.file %>"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+    <td><a href="/delete/<%= csv.file %>"><i class="fa-regular fa-trash-can " style="color: #f00;"></i></a></td>
+</tr>

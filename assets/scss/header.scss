@@ -1,0 +1,22 @@
+#header {
+    padding-top: 2rem;
+    background-color: #4474c0;
+    height: 20%;
+    #name {
+
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            padding-top: 1rem;
+            height: 5rem;
+            width: 27rem;
+            font-size: 4rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
