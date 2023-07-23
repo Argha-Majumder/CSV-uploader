@@ -78,3 +78,8 @@ CSv-uploader
     |-----package.json
     |
     |-----README.md
+
+
+## Hosting
+
+For hosting, I use [render](https://render.com), where anyone can easily upload their full stack applications for free. See my app in action over [here](https://csv-uploader-rl08.onrender.com/)
